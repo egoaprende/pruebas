@@ -105,7 +105,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 LRESULT CALLBACK WindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
     switch (uMsg) {
         case WM_CREATE: {
-            CreateWindow("STATIC", "Código:", WS_VISIBLE | WS_CHILD, 10, 10, 80, 25, hWnd, NULL, NULL, NULL);
+            CreateWindow("STATIC", "Codigo:", WS_VISIBLE | WS_CHILD, 10, 10, 80, 25, hWnd, NULL, NULL, NULL);
             hEditCodigo = CreateWindow("EDIT", "", WS_VISIBLE | WS_CHILD | WS_BORDER, 100, 10, 100, 25, hWnd, NULL, NULL, NULL);
             
             CreateWindow("STATIC", "Nombre:", WS_VISIBLE | WS_CHILD, 10, 40, 80, 25, hWnd, NULL, NULL, NULL);
