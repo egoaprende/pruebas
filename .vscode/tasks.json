@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar Windows API",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "${file}",
+                "-o", "${fileDirname}/programa.exe",
+                "-I", "C:\\MinGW\\include",
+                "-L", "C:\\MinGW\\lib",
+                "-static",
+                "-mwindows",
+                "-luser32",
+                "-lgdi32",
+                "-lkernel32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
+
